@@ -1,0 +1,53 @@
+{
+  "name": "sampleApp",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "appium": "appium",
+    "test-appium": "mocha appium/test.js --timeout 300000",
+    "package": "npm-bundle && zip -r bundleSampleApp004.zip *.tgz",
+    "cache": "./cache.sh",
+    "android-apk": "cd android && ./gradlew assembleRelease && cd .."
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.5",
+    "appium": "^1.11.0-beta.2",
+    "appium-doctor": "^1.9.0",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
+    "wd": "^1.11.1",
+    "uuid": "3.2.1"
+  },
+  "keywords": [
+    "appium",
+    "react-native"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.3",
+    "babel-jest": "24.7.1",
+    "jest": "24.7.1",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.8.3",
+    "appium": "^1.11.0-beta.2",
+    "appium-doctor": "^1.9.0",
+    "mocha": "^5.2.0",
+    "chai": "^4.2.0",
+    "wd": "^1.11.1",
+    "uuid": "3.2.1"
+  },
+  "bundledDependencies": [
+    "react",
+    "react-native",
+    "appium",
+    "appium-doctor",
+    "mocha",
+    "chai",
+    "wd",
+    "uuid"
+  ]
+}
