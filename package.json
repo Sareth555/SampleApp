@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.5",
+    "react-native": "0.62.3",
     "appium": "^1.11.0-beta.2",
     "appium-doctor": "^1.9.0",
     "mocha": "^5.2.0",
